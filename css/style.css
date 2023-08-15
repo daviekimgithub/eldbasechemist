@@ -92,14 +92,13 @@ h6,
 
 
 .topbar-right {
-    position: relative;
     background: var(--primary);
 }
 
 .topbar-right::before {
     position: absolute;
     content: "";
-    width: 30px;
+    width: 20px;
     height: 100%;
     top: 0;
     left: -15px;
@@ -115,12 +114,11 @@ h6,
 }
 
 .navbar .navbar-brand {
-    position: relative;
-    padding-right: 50px;
-    height: 75px;
-    display: flex;
+    padding-right: 10px;
+    height: 50px;
+    width: 70%;
+    display: absolute;
     align-items: center;
-    background: var(--primary);
 }
 
 .navbar .navbar-brand::after {
@@ -155,6 +153,18 @@ h6,
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
+    background-color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
 }
 
 @media (max-width: 991.98px) {

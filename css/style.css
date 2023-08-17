@@ -39,6 +39,12 @@ h6,
 }
 
 
+body{
+    max-width: 100%;
+    overflow-x: hidden;   
+}
+
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -92,6 +98,7 @@ h6,
 
 
 .topbar-right {
+    overflow: hidden;
     background: var(--primary);
 }
 
@@ -110,15 +117,15 @@ h6,
 /*** Navbar ***/
 .navbar.sticky-top {
     top: -100px;
+    overflow: hidden;
     transition: .5s;
 }
 
 .navbar .navbar-brand {
-    padding-right: 10px;
-    height: 50px;
-    width: 70%;
     display: absolute;
     align-items: center;
+    color: var(--dark);
+    font-weight: 800;
 }
 
 .navbar .navbar-brand::after {
@@ -151,7 +158,6 @@ h6,
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    vertical-align: middle;
     margin-left: 8px;
     background-color: var(--primary);
 }
